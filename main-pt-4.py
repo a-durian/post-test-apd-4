@@ -1,21 +1,11 @@
 import os
-# Clear Screen
 os.system('cls')
 
-print('===Selamat datang dalam program mengidentifikasi Segitiga dan hasil Luasnya===')
-print('')
-# Sign up
-print('Silahkan Sign Up terlebih dahulu dengan membuat username dan password')
-username = input("Masukkan username [nama panggilan]: ")
-pw = (input("Masukkan password [3 digit NIM terakhir]: "))
-
-print('')
-print('Akun berhasil dibuat!')
-print('')
+username = 'Adrian'
+pw = '032'
 # Login
-print('Silahkan Login dengan username dan password anda')
+print('Silahkan Login dengan username dan password.')
 percobaan = 5
-pengurangan_percobaan = 1
 while percobaan > 0:
     print('')
     login_username = input("Masukkan username: ")
@@ -55,9 +45,9 @@ while percobaan > 0:
     else:
         percobaan -= 1
         if percobaan >= 1:
-            print('Username atau password yang anda masukkan salah. Silahkan coba lagi.')
+            print('Username atau password salah! Silahkan coba lagi.')
             print(f"Tersisa {percobaan}x percobaan")
         else:
-            print('Username atau password yang anda masukkan salah.')
+            print('Anda salah memasukkan username atau password sebanyak 5x.')
     
 print('Program dihentikan.')
